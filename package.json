@@ -1,0 +1,35 @@
+{
+  "name": "mern_starter_app",
+  "version": "1.0.0",
+  "description": "MERN Starter App",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashibeit/mern_starter_app.git"
+  },
+  "keywords": [
+    "MERN"
+  ],
+  "author": "Shashikant Shinde",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shashibeit/mern_starter_app/issues"
+  },
+  "homepage": "https://github.com/shashibeit/mern_starter_app#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5"
+  }
+}
